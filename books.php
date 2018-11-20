@@ -15,7 +15,7 @@ $app->get('/books', function ($req, $res, $args)  {
 
     // Mostramos la vista
     return $this->view->render($res, 'booklist_template.php', [
-        'items' => $libros
+        'items'  => $libros
     ]);
 })->setName('books');
 
