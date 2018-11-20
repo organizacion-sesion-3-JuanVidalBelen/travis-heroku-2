@@ -8,7 +8,7 @@ class Book extends \Illuminate\Database\Eloquent\Model
 
 $app->get('/books', function ($req, $res, $args)  {
 
-    // Creamos un objeto collection + json con la lista de películas
+    // Creamos un objeto collection + json con la lista de películas   
 
     // Obtenemos la lista de los libros de la base de datos y la convertimos del formato Json (el devuelto por Eloquent) a un array PHP
     $libros = json_decode(\Book::all());
